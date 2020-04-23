@@ -16,3 +16,17 @@ class SpidermanItem(scrapy.Item):
     star = scrapy.Field()
     release_time = scrapy.Field()
     score = scrapy.Field()
+
+
+class XiaoFeiQuanItem(scrapy.Item):
+    url = scrapy.Field()
+    news_title = scrapy.Field()
+    news_content = scrapy.Field()
+    # province = scrapy.Field()
+    # city = scrapy.Field()
+    publish_date = scrapy.Field()
+    # issue_circle = scrapy.Field()
+    # issue_date = scrapy.Field()
+    # total_issue = scrapy.Field()
+    # issue_amount = scrapy.Field()
+    # cover_sector = scrapy.Field()

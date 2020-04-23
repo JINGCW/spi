@@ -1,565 +1,448 @@
-<!DOCTYPE html>
-
-<!--[if IE 8]>
-<html class="ie8"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9"><![endif]-->
-<!--[if gt IE 9]><!-->
-<html><!--<![endif]-->
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>热映口碑榜 - 猫眼电影 - 一网打尽好电影</title>
-
-    <link rel="dns-prefetch" href="//p0.meituan.net"/>
-    <link rel="dns-prefetch" href="//p1.meituan.net"/>
-    <link rel="dns-prefetch" href="//ms0.meituan.net"/>
-    <link rel="dns-prefetch" href="//s0.meituan.net"/>
-    <link rel="dns-prefetch" href="//ms1.meituan.net"/>
-    <link rel="dns-prefetch" href="//analytics.meituan.com"/>
-    <link rel="dns-prefetch" href="//report.meituan.com"/>
-    <link rel="dns-prefetch" href="//frep.meituan.com"/>
-
-
-    <meta charset="utf-8">
-    <meta name="keywords" content="猫眼电影,电影排行榜,热映口碑榜,最受期待榜,国内票房榜,北美票房榜,猫眼TOP100">
-    <meta name="description" content="猫眼电影热门榜单,包括热映口碑榜,最受期待榜,国内票房榜,北美票房榜,猫眼TOP100,多维度为用户进行选片决策">
-    <meta http-equiv="cleartype" content="yes"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="renderer" content="webkit"/>
-
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="format-detection" content="email=no"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <script>"use strict";
-    !function () {
-        var i = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : "_Owl_", n = window;
-        n[i] || (n[i] = {
-            isRunning: !1, isReady: !1, preTasks: [], dataSet: [], use: function (i, t) {
-                this.isReady && n.Owl && n.Owl[i](t), this.preTasks.push({api: i, data: [t]})
-            }, add: function (i) {
-                this.dataSet.push(i)
-            }, run: function () {
-                var t = this;
-                if (!this.isRunning) {
-                    this.isRunning = !0;
-                    var i = n.onerror;
-                    n.onerror = function () {
-                        this.isReady || this.add({type: "jsError", data: arguments}), i && i.apply(n, arguments)
-                    }.bind(this), (n.addEventListener || n.attachEvent)("error", function (i) {
-                        t.isReady || t.add({type: "resError", data: [i]})
-                    }, !0)
-                }
-            }
-        }, n[i].run())
-    }();</script>
-    <script>
-        cid = "c_wx6zb55";
-        ci = 59;
-        val = {"subnavId": 7};
-        window.system = {};
-
-        window.openPlatform = '';
-        window.openPlatformSub = '';
-        window.$mtsiFlag = '0';
-
-    </script>
-    <link rel="stylesheet"
-          href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/common.d1d257d3.css"/>
-    <link rel="stylesheet"
-          href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/board-index.92a06072.css"/>
-    <script crossorigin="anonymous"
-            src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/stat.88d57c80.js"></script>
-    <script>if (window.devicePixelRatio >= 2) {
-        document.write('<link rel="stylesheet" href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image-2x.8ba7074d.css"/>')
-    }</script>
-    <style>
-        @font-face {
-            font-family: stonefont;
-            src: url('//vfile.meituan.net/colorstone/4468cd5024fda66e6cccd5d6351da5803428.eot');
-            src: url('//vfile.meituan.net/colorstone/4468cd5024fda66e6cccd5d6351da5803428.eot?#iefix') format('embedded-opentype'),
-            url('//vfile.meituan.net/colorstone/4b9c514b03370c5532115c68fc46452c2280.woff') format('woff');
-        }
-
-        .stonefont {
-            font-family: stonefont;
-        }
-    </style>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?703e94591e87be68cc8da0da7cbd0be2";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
+    <meta charset="utf-8"/>
+    <meta name="referrer" content="always">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/img/favicon64.ico"
+          type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed"
+          href="https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/img/screen_icon_new.png">
+    <title>消费券来了！谁能领，怎么花，会导致物价上涨吗？</title>
+    <link rel="stylesheet" href="https://mbdp01.bdstatic.com/static/superlanding/css/land_min_pack_34b2c65.css">
+    <meta itemprop="dateUpdate" content="2020-03-25 20:34:02"/>
 </head>
 <body>
-
-
-<div class="header">
-    <div class="header-inner">
-        <a href="//maoyan.com" class="logo" data-act="icon-click"></a>
-        <div class="city-container" data-val="{currentcityid:59 }">
-            <div class="city-selected">
-                <div class="city-name">
-                    成都
-                    <span class="caret"></span>
+<script>/* eslint-disable */
+var s_domain = {
+    "protocol": "https:",
+    "staticUrl": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/",
+    "base": "",
+    "baseuri": "",
+    "passconf": "http://passport.baidu.com/ubrwsbas",
+    "logout": "https://passport.baidu.com/?logout&u=",
+    "bs": "https://www.baidu.com",
+    "sp": "http://hi.baidu.com/",
+    "ssllist": {
+        "a.hiphotos.baidu.com": "ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy",
+        "b.hiphotos.baidu.com": "ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy",
+        "c.hiphotos.baidu.com": "ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy",
+        "d.hiphotos.baidu.com": "ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy",
+        "e.hiphotos.baidu.com": "ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy",
+        "f.hiphotos.baidu.com": "ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy",
+        "g.hiphotos.baidu.com": "ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy",
+        "h.hiphotos.baidu.com": "ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy",
+        "1.su.bdimg.com": "ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG",
+        "t10.baidu.com": "ss0.baidu.com/6ONWsjip0QIZ8tyhnq",
+        "t11.baidu.com": "ss1.baidu.com/6ONXsjip0QIZ8tyhnq",
+        "t12.baidu.com": "ss2.baidu.com/6ONYsjip0QIZ8tyhnq",
+        "himg.bdimg.com": "ss1.bdstatic.com/7Ls0a8Sm1A5BphGlnYG",
+        "cdn00.baidu-img.cn": "ss0.bdstatic.com/9bA1vGba2gU2pMbfm9GUKT-w",
+        "cdn01.baidu-img.cn": "ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w"
+    }
+};
+var s_session = {
+    "ssid": "d3d9ff43",
+    "logid": "",
+    "sid": "1448_31169_21115_31254_31421_31342_30906_31270_31228_30824_31085_31164_31195",
+    "nid": "9764483795230315337",
+    "qid": ""
+};
+var s_advert = {
+    "isBjh": "1",
+    "contentUrl": "http://baijiahao.baidu.com/s?id=1662139525448291668",
+    "contentPlatformId": "3",
+    "contentType": "1",
+    "pvid": "6ed761896b6e80ce",
+    "time": "2020-04-23 20:46:26",
+    "contentAccType": "1",
+    "ctk": "6e4874ae34718ec2",
+    "contentAccId": "zqdyIN2dlB50-Oj7VWty-A",
+    "ctk_b": "6581f94ea6384b13",
+    "logid": "2785992290",
+    "dtime": "1587645986",
+    "grade": "3",
+    "createTimeAccLevel": "3"
+};</script>
+<script>/* eslint-disable */
+var bds = {
+    se: {},
+    su: {
+        urdata: [], urSendClick: function () {
+        }, urStatic: "https://ss.bdimg.com"
+    },
+    util: {},
+    use: {},
+    comm: {
+        domain: "",
+        ubsurl: "",
+        tn: "",
+        queryEnc: "",
+        queryId: "",
+        inter: "",
+        sugHost: "",
+        query: "",
+        qid: "",
+        cid: "",
+        sid: "",
+        stoken: "",
+        serverTime: "",
+        user: "",
+        username: "",
+        loginAction: [],
+        useFavo: "",
+        pinyin: "",
+        favoOn: "",
+        curResultNum: "0",
+        rightResultExist: false,
+        protectNum: 0,
+        zxlNum: 0,
+        pageNum: 1,
+        pageSize: 10,
+        ishome: 1,
+        newindex: 1
+    }
+};
+var name, navigate, al_arr = [];
+var selfOpen = window.open;
+eval("var open = selfOpen;");
+var isIE = navigator.userAgent.indexOf("MSIE") != -1 && !window.opera;
+var E = bds.ecom = {};
+bds.se.mon = {
+    loadedItems: [], load: function () {
+    }, srvt: -1
+};
+try {
+    bds.se.mon.srvt = parseInt(document.cookie.match(new RegExp("(^| )BDSVRTM=([^;]*)(;|$)"))[2]);
+    document.cookie = "BDSVRTM=;expires=Sat, 01 Jan 2000 00:00:00 GMT"
+} catch (e) {
+}
+var bdUser = bds.comm.user ? bds.comm.user : null, bdQuery = bds.comm.query, bdUseFavo = bds.comm.useFavo,
+    bdFavoOn = bds.comm.favoOn, bdCid = bds.comm.cid, bdSid = bds.comm.sid, bdServerTime = bds.comm.serverTime,
+    bdQid = bds.comm.queryId, bdstoken = bds.comm.stoken, login_success = [];</script>
+<div id="detail-page">
+    <div class="line-shadow"></div>
+    <div class="item-wrap">
+        <div id="header_wrap" class="header_wrap">
+            <div class="header_content">
+                <div class="header_logo"><a href="https://www.baidu.com" id="result_logo"
+                                            data-clklog="tid:139;cst:2;logInfo:head_logo;"
+                                            data-extralog="rid:;pos:;extra:;isBaiJiaHao:1;login:1;"
+                                            data-rid="head_0"><img
+                        src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superlanding/img/logo_top.png" alt="到百度首页"
+                        title="到百度首页"></a></div>
+                <div class="header_menu" data-rid="header_menu"><a href="https://www.baidu.com" class="index"
+                                                                   data-clklog="tid:142;cst:2;logInfo:head_menu"
+                                                                   data-extralog="rid:;pos:;extra:;isBaiJiaHao:1;login:1;type:backindex"
+                                                                   data-rid="head_1">百度首页</a><span class="line"></span>
+                    <div id="userBlock"><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http://www.baidu.com"
+                                           class="login" data-clklog="tid:142;cst:2;logInfo:head_menu;"
+                                           data-extralog="rid:;pos:;extra:;isBaiJiaHao:1;login:1;type:login"
+                                           data-rid="head_2">登录</a><a href="http://i.baidu.com/" id="usrname"
+                                                                      class="usrname"
+                                                                      data-clklog="tid:142;cst:2;logInfo:head_menu;"
+                                                                      data-extralog="rid:;pos:;extra:;isBaiJiaHao:1;login:1;type:usrname;"
+                                                                      data-rid="head_2"><span id="nametxt">金橙五x</span>
+                        <div id="user_menu" data-showlog="tid:131;cst:1;logInfo:usrmenu;"
+                             data-extralog="rid:;pos:;extra:;isBaiJiaHao:1;login:1;"
+                             class="s-isindex-wrap s-user-set-menu menu-top" style="display: none;">
+                            <div><a href="http://i.baidu.com/center" target="_blank" data-tid="1000"
+                                    data-clklog="tid:146;cst:2;logInfo:usrmenu;"
+                                    data-extralog="rid:;pos:1;extra:;isBaiJiaHao:1;login:1;type:center;"
+                                    data-rid="usr_menu_1">个人中心</a><a href="http://passport.baidu.com/" data-tid="1001"
+                                                                     target="_blank"
+                                                                     data-clklog="tid:146;cst:2;logInfo:usrmenu;"
+                                                                     data-extralog="rid:;pos:2;extra:;isBaiJiaHao:1;login:1;type:passport;"
+                                                                     data-rid="usr_menu_2">帐号设置</a><a class="s-feedback"
+                                                                                                      style="overflow:hidden"
+                                                                                                      href="#"
+                                                                                                      onclick="return false;"
+                                                                                                      data-clklog="tid:146;cst:2;logInfo:usrmenu;"
+                                                                                                      data-extralog="rid:;pos:3;extra:;isBaiJiaHao:1;login:1;type:feedback;"
+                                                                                                      data-rid="header_menu_3">意见反馈</a><a
+                                    class="quit" style="overflow:hidden"
+                                    href="https://passport.baidu.com/?logout&u=https://www.baidu.com"
+                                    data-clklog="tid:146;cst:2;logInfo:usrmenu;"
+                                    data-extralog="rid:;pos:4;extra:;isBaiJiaHao:1;login:1;type:quit;"
+                                    data-rid="usr_menu_4">退出</a></div>
+                            <span class="menu-arrow"><em></em></span></div></div>
                 </div>
             </div>
-            <div class="city-list" data-val="{ localcityid: 59 }">
-                <div class="city-list-header">定位城市：<a class="js-geo-city" data-ci="59">成都</a></div>
-
-            </div>
         </div>
-
-
-        <div class="nav">
-            <ul class="navbar">
-                <li><a href="/" data-act="home-click">首页</a></li>
-                <li><a href="/films" data-act="movies-click">电影</a></li>
-                <li><a href="/cinemas" data-act="cinemas-click">影院</a></li>
-                <li><a href="http://www.gewara.com">演出</a></li>
-
-                <li><a href="/board" data-act="board-click" class="active">榜单</a></li>
-                <li><a href="/news" data-act="hotNews-click">热点</a></li>
-                <li><a href="/edimall">商城</a></li>
-            </ul>
-        </div>
-
-        <div class="user-info">
-            <div class="user-avatar J-login">
-                <img src="https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png">
-                <span class="caret"></span>
-                <ul class="user-menu no-login-menu">
-                    <li><a href="javascript:void 0">登录</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <form action="/query" target="_blank" class="search-form" data-actform="search-click">
-            <input name="kw" class="search" type="search" maxlength="32" placeholder="找影视剧、影人、影院" autocomplete="off">
-            <input class="submit" type="submit" value="">
-        </form>
-
-        <div class="app-download">
-            <a href="/app" target="_blank">
-                <span class="iphone-icon"></span>
-                <span class="apptext">APP下载</span>
-                <span class="caret"></span>
-                <div class="download-icon">
-                    <p class="down-title">扫码下载APP</p>
-                    <p class='down-content'>选座更优惠</p>
+    </div>
+    <div class="title_border">
+        <div class="anci_header_content">
+            <div class="article-title"><h2>消费券来了！谁能领，怎么花，会导致物价上涨吗？</h2></div>
+            <div class="article-desc clearfix">
+                <div class="author-icon"><img
+                        src="https://pic.rmb.bdstatic.com/3ec9d53f292de87274c1572c2d44ddc6.jpeg"><i
+                        class="author-vip author-vip-2"></i></div>
+                <div class="author-txt"><p class="author-name">经济日报</p>
+                    <div class="article-source article-source-bjh"><span class="date">发布时间：03-25</span><span
+                            class="time">20:34</span><span class="account-authentication">《经济日报》官方帐号</span></div>
                 </div>
-            </a>
-        </div>
-
-    </div>
-</div>
-<div class="header-placeholder"></div>
-
-<div class="subnav">
-    <ul class="navbar">
-        <li>
-            <a data-act="subnav-click" data-val="{subnavClick:7}"
-               data-state-val="{subnavId:7}"
-               class="active" href="javascript:void(0);"
-            >热映口碑榜</a>
-        </li>
-        <li>
-            <a data-act="subnav-click" data-val="{subnavClick:6}"
-               href="/board/6"
-            >最受期待榜</a>
-        </li>
-        <li>
-            <a data-act="subnav-click" data-val="{subnavClick:1}"
-               href="/board/1"
-            >国内票房榜</a>
-        </li>
-        <li>
-            <a data-act="subnav-click" data-val="{subnavClick:2}"
-               href="/board/2"
-            >北美票房榜</a>
-        </li>
-        <li>
-            <a data-act="subnav-click" data-val="{subnavClick:4}"
-               href="/board/4"
-            >TOP100榜</a>
-        </li>
-    </ul>
-</div>
-
-
-<div class="container" id="app" class="page-board/index">
-
-    <div class="content">
-        <div class="wrapper">
-            <div class="main">
-                <p class="update-time">2020-04-09<span class="has-fresh-text">已更新</span></p>
-                <p class="board-content">榜单规则：将昨日国内热映的影片，按照评分从高到低排列取前10名，每天上午10点更新。相关数据来源于“猫眼专业版”及“猫眼电影库”。</p>
-                <dl class="board-wrapper">
-                    <dd>
-                        <i class="board-index board-index-1">1</i>
-                        <a href="/films/1277939" title="我和我的祖国" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:1277939}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p0.meituan.net/moviemachine/b2c5c74d33e45745fd3462e44b3698e18336620.jpg@160w_220h_1e_1c"
-                                 alt="我和我的祖国" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/1277939" title="我和我的祖国" data-act="boarditem-click"
-                                                       data-val="{movieId:1277939}">我和我的祖国</a></p>
-                                    <p class="star">
-                                        主演：黄渤,张译,韩昊霖
-                                    </p>
-                                    <p class="releasetime">上映时间：2019-09-30</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">9.</i><i class="fraction">7</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-2">2</i>
-                        <a href="/films/1190122" title="叶问4：完结篇" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:1190122}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p0.meituan.net/movie/a3d6ca3bdd5b0ddd7016acff9a9f2f2e2805813.jpg@160w_220h_1e_1c"
-                                 alt="叶问4：完结篇" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/1190122" title="叶问4：完结篇" data-act="boarditem-click"
-                                                       data-val="{movieId:1190122}">叶问4：完结篇</a></p>
-                                    <p class="star">
-                                        主演：甄子丹,吴樾,吴建豪
-                                    </p>
-                                    <p class="releasetime">上映时间：2019-12-20</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">9.</i><i class="fraction">4</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-3">3</i>
-                        <a href="/films/416" title="盗梦空间" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:416}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p1.meituan.net/movie/d40efe1183f29d5900f5c60be3c8a89d339225.jpg@160w_220h_1e_1c"
-                                 alt="盗梦空间" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/416" title="盗梦空间" data-act="boarditem-click"
-                                                       data-val="{movieId:416}">盗梦空间</a></p>
-                                    <p class="star">
-                                        主演：莱昂纳多·迪卡普里奥,渡边谦,约瑟夫·高登-莱维特
-                                    </p>
-                                    <p class="releasetime">上映时间：2010-09-01</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">9.</i><i class="fraction">2</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-4">4</i>
-                        <a href="/films/246083" title="捉妖记" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:246083}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p0.meituan.net/movie/79182a20224ebe1751b2d8980420cf21149653.jpg@160w_220h_1e_1c"
-                                 alt="捉妖记" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/246083" title="捉妖记" data-act="boarditem-click"
-                                                       data-val="{movieId:246083}">捉妖记</a></p>
-                                    <p class="star">
-                                        主演：白百何,井柏然,姜武
-                                    </p>
-                                    <p class="releasetime">上映时间：2015-07-16</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">9.</i><i class="fraction">1</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-5">5</i>
-                        <a href="/films/1279731" title="宠爱" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:1279731}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p0.meituan.net/moviemachine/36eda496688542263d9a0f02ac728327823369.jpg@160w_220h_1e_1c"
-                                 alt="宠爱" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/1279731" title="宠爱" data-act="boarditem-click"
-                                                       data-val="{movieId:1279731}">宠爱</a></p>
-                                    <p class="star">
-                                        主演：于和伟,吴磊,张子枫
-                                    </p>
-                                    <p class="releasetime">上映时间：2019-12-31</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">8.</i><i class="fraction">9</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-6">6</i>
-                        <a href="/films/1256872" title="为国而歌" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:1256872}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p0.meituan.net/movie/db82e48befc1c7e2e98425165b2500d76222872.jpg@160w_220h_1e_1c"
-                                 alt="为国而歌" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/1256872" title="为国而歌" data-act="boarditem-click"
-                                                       data-val="{movieId:1256872}">为国而歌</a></p>
-                                    <p class="star">
-                                        主演：王雷,古力娜扎,海一天
-                                    </p>
-                                    <p class="releasetime">上映时间：2019-10-18</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">8.</i><i class="fraction">9</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-7">7</i>
-                        <a href="/films/78003" title="西游·降魔篇" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:78003}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p1.meituan.net/movie/bbece4ae764b9b9661655e54ce0347d6276411.jpg@160w_220h_1e_1c"
-                                 alt="西游·降魔篇" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/78003" title="西游·降魔篇" data-act="boarditem-click"
-                                                       data-val="{movieId:78003}">西游·降魔篇</a></p>
-                                    <p class="star">
-                                        主演：舒淇,文章,黄渤
-                                    </p>
-                                    <p class="releasetime">上映时间：2013-02-10</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">8.</i><i class="fraction">4</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-8">8</i>
-                        <a href="/films/337058" title="不期而遇" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:337058}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p0.meituan.net/movie/716fd3706814984a384be50e9c6d3058187208.jpg@160w_220h_1e_1c"
-                                 alt="不期而遇" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/337058" title="不期而遇" data-act="boarditem-click"
-                                                       data-val="{movieId:337058}">不期而遇</a></p>
-                                    <p class="star">
-                                        主演：张雨绮,张亮,王少雍
-                                    </p>
-                                    <p class="releasetime">上映时间：2017-05-19</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">7.</i><i class="fraction">9</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-9">9</i>
-                        <a href="/films/344809" title="美容针" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:344809}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p1.meituan.net/movie/9e6e0bc2f5367214b88fbbadb3d85145486469.jpg@160w_220h_1e_1c"
-                                 alt="美容针" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/344809" title="美容针" data-act="boarditem-click"
-                                                       data-val="{movieId:344809}">美容针</a></p>
-                                    <p class="star">
-                                        主演：闫妮,杜天皓,宋伊人
-                                    </p>
-                                    <p class="releasetime">上映时间：2017-05-20</p></div>
-                                <div class="movie-item-number score-num">
-                                    <p class="score"><i class="integer">7.</i><i class="fraction">9</i></p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                    <dd>
-                        <i class="board-index board-index-10">10</i>
-                        <a href="/films/1263827" title="魔镜奇缘3" class="image-link" data-act="boarditem-click"
-                           data-val="{movieId:1263827}">
-                            <img src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image/loading_2.e3d934bf.png"
-                                 alt="" class="poster-default"/>
-                            <img data-src="https://p0.meituan.net/moviemachine/e0972e696b0f1125e9f674d56074202c4946408.jpg@160w_220h_1e_1c"
-                                 alt="魔镜奇缘3" class="board-img"/>
-                        </a>
-                        <div class="board-item-main">
-                            <div class="board-item-content">
-                                <div class="movie-item-info">
-                                    <p class="name"><a href="/films/1263827" title="魔镜奇缘3" data-act="boarditem-click"
-                                                       data-val="{movieId:1263827}">魔镜奇缘3</a></p>
-                                    <p class="star">
-                                        主演：苏旖旎,王兴康,崔志昂
-                                    </p>
-                                    <p class="releasetime">上映时间：2019-12-14</p></div>
-                                <div class="movie-item-number score-num">
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </dd>
-                </dl>
-
             </div>
         </div>
     </div>
-
-</div>
-
-<div class="footer">
-    <p class="friendly-links">
-        关于猫眼 :
-        <a href="http://ir.maoyan.com/s/index.php#pageScroll0" target="_blank">关于我们</a>
-        <span></span>
-        <a href="http://ir.maoyan.com/s/index.php#pageScroll1" target="_blank">管理团队</a>
-        <span></span>
-        <a href="http://ir.maoyan.com/s/index.php#pageScroll2" target="_blank">投资者关系</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        友情链接 :
-        <a href="http://www.meituan.com" data-query="utm_source=wwwmaoyan" target="_blank">美团网</a>
-        <span></span>
-        <a href="http://www.gewara.com" data-query="utm_source=wwwmaoyan">格瓦拉</a>
-        <span></span>
-        <a href="http://i.meituan.com/client" data-query="utm_source=wwwmaoyan" target="_blank">美团下载</a>
-        <span></span>
-        <a href="https://www.huanxi.com" data-query="utm_source=maoyan_pc" target="_blank">欢喜首映</a>
-    </p>
-    <p class="friendly-links">
-        商务合作邮箱：v@maoyan.com
-        客服电话：10105335
-        违法和不良信息举报电话：4006018900
-    </p>
-    <p class="friendly-links">
-        用户投诉邮箱：tousujubao@meituan.com
-        舞弊线索举报邮箱：wubijubao@maoyan.com
-    </p>
-    <p class="friendly-links  credentials">
-        <a href="/about/licence/1" target="_blank">中华人民共和国增值电信业务经营许可证 京B2-20190350</a>
-        <span></span>
-        <a href="/about/licence/4" target="_blank">营业性演出许可证 京演（机构）（2019）4094号</a>
-    </p>
-    <p class="friendly-links  credentials">
-        <a href="/about/licence/3" target="_blank">广播电视节目制作经营许可证 （京）字第08478号</a>
-        <span></span>
-        <a href="/about/licence/2" target="_blank">网络文化经营许可证 京网文（2019）3837-369号 </a>
-    </p>
-    <p class="friendly-links  credentials">
-        <a href="/rules/agreement" target="_blank">猫眼用户服务协议 </a>
-        <span></span>
-        <a href="/rules/rule" target="_blank">猫眼平台交易规则总则 </a>
-        <span></span>
-        <a href="/rules/privacy" target="_blank">隐私政策 </a>
-    </p>
-    <p class="friendly-links  credentials">
-        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003232" target="_blank">京公网安备
-            11010102003232号</a>
-        <span></span>
-        <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备16022489号</a>
-    </p>
-    <p>北京猫眼文化传媒有限公司</p>
-    <p>
-        &copy;<span class="my-footer-year">2016</span>
-        猫眼电影 maoyan.com</p>
-    <div class="certificate">
-        <a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/350CF8BCA8416C4FE0530140A8C0957E"
-           target="_blank">
-            <img src="http://p0.meituan.net/moviemachine/e54374ccf134d1f7b2c5b075a74fca525326.png"/>
-        </a>
-        <a href="/about/licence/5" target="_blank">
-            <img src="http://p1.meituan.net/moviemachine/805f605d5cf1b1a02a4e3a5e29df003b8376.png"/>
-        </a>
+    <div id="content-container" class="content-container clearfix" data-showlog="tid:126;cst:1;logInfo:landing;"
+         data-extralog="flow:2;st:news;rid:9764483795230315337;pos:0;extra:;source:1;isBaijiahao:1;login:1;appId:1570801610198511;"
+         data-ratio="1" data-rid="page">
+        <div id="left-container" class="left-container">
+            <div class="item-wrap">
+                <div class="article " id="article" data-islow-browser="0">
+                    <div class="article-content"><p><span
+                            class="bjh-p">疫情期间，不少人“憋屈”在家很久了，估计做梦都在想着等疫情结束，如何“报复性”消费一把。</span></p>
+                        <p><span class="bjh-p">这不，一大波福利来了！</span></p>
+                        <p><span class="bjh-p">近期各地纷纷发放各种类型的消费券，一方面，这是响应国家发改委等23个部门联合出台的意见，积极扩大消费；另一方面，也是鼓励大家多消费，“帮一把”停摆多日的餐饮服务业。</span>
+                        </p>
+                        <p><span class="bjh-p">到底哪些地方发了消费券，咋领、咋花？快来瞧一瞧。</span></p>
+                        <p><span class="bjh-p"><span class="bjh-strong">哪些地方发了消费券，发了多少，咋发的</span></span></p>
+                        <p><span class="bjh-p">3月2日，山东济南推出了2000万元文旅消费券，主要针对景区、旅行社、影剧院、演艺场所、书店等文旅类型的消费。</span></p>
+                        <div class="img-container"><img class="large" data-loadfunc=0
+                                                        src="https://pics5.baidu.com/feed/a8014c086e061d95ea0e5e5300a063d763d9cae8.jpeg?token=a1514a006fd3106637736833bcec8134"
+                                                        data-loaded=0/></div>
+                        <p><span class="bjh-p">3月13日，宁波市宣布发放1亿元文化旅游惠民消费券。同时，还将推出健身消费券，市民凭券可免费使用场馆场地设施健身。</span></p>
+                        <p><span class="bjh-p">3月13日，南京推出了力度空前的3.18亿元消费券。其中，餐饮、体育、图书、信息等4类电子消费券共计5000万元。</span></p>
+                        <p><span class="bjh-p">3月20日，青岛市宣布将向市民发放3.4亿元健身消费券。</span></p>
+                        <p><span class="bjh-p">此外，辽宁、河北、浙江等省份均在全省范围印发文件，其中辽宁和浙江发放文旅消费券，河北发放体育消费券。</span></p>
+                        <p><span class="bjh-p">看来，在发放消费券方面，各地有各地的高招。你被消费券“砸”中了吗？</span></p>
+                        <p><span class="bjh-p"><span class="bjh-strong">消费券咋花，哪些人能领</span></span></p>
+                        <p><span class="bjh-p">难得遇上天上掉“红包”的好事儿，那么，这一波福利又如何get呢？</span></p>
+                        <p><span
+                                class="bjh-p">目前来看，各地发放的消费券多以电子形式为主，需要通过手机APP申领和使用。各地申领消费券的方式不同，消费者可以多关注当地官方发布的消息。</span>
+                        </p>
+                        <p><span class="bjh-p">以南京为例，申领消费券需要摇号，但不限户籍，谁都能“摇奖”。南京居民在“我的南京”APP上注册报名，即可参加消费券摇号。成功领到消费券后，可在线下付款时使用，抵扣一定数额的消费。</span>
+                        </p>
+                        <div class="img-container"><img class="large" data-loadfunc=0
+                                                        src="https://pics4.baidu.com/feed/95eef01f3a292df58ac1da5f3d65356635a873d0.jpeg?token=18c2710afb65f2f416cb2d4ab3b1ace1"
+                                                        data-loaded=0/></div>
+                        <p><span class="bjh-p">济南文化惠民消费电子券主要分20、50、80、100、150、200元等不同面额，消费者可以通过微信搜索小程序“贴票票”线上平台领取消费券，在消费时可以抵扣相应金额。</span>
+                        </p>
+                        <p><span class="bjh-p"><span class="bjh-strong">消费券真的能拉动消费吗？</span></span></p>
+                        <p><span class="bjh-p">不少网友好奇，消费券真的能拉动消费吗？</span></p>
+                        <p><span class="bjh-p">中国贸促会研究院国际贸易研究部主任赵萍认为，消费券是通过补贴方式来刺激消费、释放消费需求。从以往经验来看，消费补贴政策一般在短期内都会带动消费增长，甚至出现消费新高。</span>
+                        </p>
+                        <div class="img-container"><img class="large" data-loadfunc=0
+                                                        src="https://pics4.baidu.com/feed/21a4462309f790524e0cfbf979a7becc7acbd545.jpeg?token=a4fc9e2164ad6609b0eed5fadc988ed6&amp;s=7740FD174BA1EEC2147007EC0300B026"
+                                                        data-loaded=0/></div>
+                        <p><span class="bjh-p">赵萍还指出，在消费券重点支持的领域，短期内会出现消费快速增长局面，从而使因疫情受到抑制的消费需求尽快释放，加快消费实现恢复性增长。</span>
+                        </p>
+                        <p><span class="bjh-p">3月23日，南京完成5000万元电子消费券最后一轮摇号。据了解，三轮共摇出67万笔消费券，带动消费近千万元。效果杠杠地！</span></p>
+                        <p><span class="bjh-p"><span class="bjh-strong">消费券会不会造成物价上涨？</span></span></p>
+                        <p><span class="bjh-p">消费券好是好，但也引起部分网友担忧，会不会引起物价上涨？</span></p>
+                        <p><span class="bjh-p">其实，这－是－多－虑－了！</span></p>
+                        <div class="img-container"><img class="normal" width="255px" data-loadfunc=0
+                                                        src="https://pics7.baidu.com/feed/2cf5e0fe9925bc31b19dfd0a258be4b7ca13703f.jpeg?token=d761ab423829085dc0bf529b53954b9a"
+                                                        data-loaded=0/></div>
+                        <p><span class="bjh-p">首先，发放消费券并不是通过增发货币实现的，而是通过财政手段。也就是说，钱并没有变多，当然也就谈不上引起通胀和物价上涨。</span></p>
+                        <p><span
+                                class="bjh-p">其次，目前发放的并不是普惠式消费券，而是针对那些受疫情影响较大的餐饮、文旅等服务性行业，是为了促进这些行业尽快恢复到正常水平，而不是过度刺激消费。</span>
+                        </p>
+                        <p><span class="bjh-p">同时，目前发放消费券主要集中在浙江、江苏、山东等经济相对发达地区，这些地方的财政有能力负担。</span></p>
+                        <p><span class="bjh-p">不少专家也已提出，要合理使用消费券，不建议、不提倡长期发放消费券补贴。也就是说，发放消费券只是权宜之计，不可能变成长期行为，因此不用担心会产生负面效果。</span>
+                        </p>
+                        <p><span class="bjh-p"><span class="bjh-strong">消费券，你领到了吗？</span></span></p>
+                        <p><span class="bjh-p"><span class="bjh-strong">来说说你的期待和想法</span></span></p></div>
+                    <audio height="0" width="0" id="musicAudio" data-play-index>
+                        <source></source>
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div id="right-container" class="right-container">
+            <div class="item-wrap">
+                <div class="recent-article" data-pos="">
+                    <h2>作者最新文章</h>
+                        <ul>
+                            <li data-showlog="tid:135;cst:1;logInfo:recent_article;"
+                                data-extralog="rid:;pos:0;extra:;isBaiJiaHao:1;login:1;" data-rid="recent_article_0"><h3
+                                    class="item-title"><a
+                                    href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10289354998277949418%22%7D&amp;n_type=1&amp;p_from=3"
+                                    data-clklog="tid:147;cst:2;logInfo:recent_article;"
+                                    data-extralog="rid:;pos:0;extra:;isBaiJiaHao:1;login:1;" target="_blank">抚顺银行：信贷支持实体经济打赢金融战“疫”</a>
+                            </h3>
+                                <div class="item-desc hide"><span class="info-date">04-23</span><span class="info-time">20:02</span>
+                                </div>
+                            </li>
+                            <li data-showlog="tid:135;cst:1;logInfo:recent_article;"
+                                data-extralog="rid:;pos:1;extra:;isBaiJiaHao:1;login:1;" data-rid="recent_article_1"><h3
+                                    class="item-title"><a
+                                    href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9526828810768956069%22%7D&amp;n_type=1&amp;p_from=3"
+                                    data-clklog="tid:147;cst:2;logInfo:recent_article;"
+                                    data-extralog="rid:;pos:1;extra:;isBaiJiaHao:1;login:1;" target="_blank">山东淄川区太河镇：建起“小民宿”
+                                拉动“大扶贫”</a></h3>
+                                <div class="item-desc hide"><span class="info-date">04-23</span><span class="info-time">20:02</span>
+                                </div>
+                            </li>
+                            <li data-showlog="tid:135;cst:1;logInfo:recent_article;"
+                                data-extralog="rid:;pos:2;extra:;isBaiJiaHao:1;login:1;" data-rid="recent_article_2"><h3
+                                    class="item-title"><a
+                                    href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10182583794910843562%22%7D&amp;n_type=1&amp;p_from=3"
+                                    data-clklog="tid:147;cst:2;logInfo:recent_article;"
+                                    data-extralog="rid:;pos:2;extra:;isBaiJiaHao:1;login:1;" target="_blank">甘肃武都：开发公益性岗位稳就业促脱贫</a>
+                            </h3>
+                                <div class="item-desc hide"><span class="info-date">04-23</span><span class="info-time">20:01</span>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="item-wrap">
+                <div class="related-news">
+                    <div class="news-content "><h2>相关文章</h2>
+                        <ul>
+                            <li data-showlog="tid:136;cst:1;logInfo:related_news;"
+                                data-extralog="flow:2;rid:;pos:0;extra:;isBaiJiaHao:1;login:1;"
+                                data-rid="related_news_0">
+                                <div class="item-content clearfix">
+                                    <div class="news-info">
+                                        <div class="news-title"><h3><a class="upgrade"
+                                                                       data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                                       data-extralog="rid:;pos:0;extra:;isBaiJiaHao:1;login:1;type:'title'"
+                                                                       href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9804797668240468182%22%7D&amp;n_type=1&amp;p_from=4"
+                                                                       target="_blank">肯德基星巴克在华上线人造肉食品，你愿意尝试吗</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="news-pic"><a class="upgrade"
+                                                             data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                             data-extralog="rid:;pos:1;extra:;isBaiJiaHao:1;login:1;type:'img'"
+                                                             href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9804797668240468182%22%7D&amp;n_type=1&amp;p_from=4"
+                                                             target="_blank"><img
+                                            src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4102273125,2750479779&amp;fm=173&amp;app=49&amp;f=JPEG?w=312&amp;h=208&amp;s=F503D01B4741714F10FB07E00300503E"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-showlog="tid:136;cst:1;logInfo:related_news;"
+                                data-extralog="flow:2;rid:;pos:1;extra:;isBaiJiaHao:1;login:1;"
+                                data-rid="related_news_1">
+                                <div class="item-content clearfix">
+                                    <div class="news-info">
+                                        <div class="news-title"><h3><a class="upgrade"
+                                                                       data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                                       data-extralog="rid:;pos:1;extra:;isBaiJiaHao:1;login:1;type:'title'"
+                                                                       href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9506120054601799056%22%7D&amp;n_type=1&amp;p_from=4"
+                                                                       target="_blank">西安：加强防疫演练 迎接小学复课</a></h3></div>
+                                    </div>
+                                    <div class="news-pic"><a class="upgrade"
+                                                             data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                             data-extralog="rid:;pos:2;extra:;isBaiJiaHao:1;login:1;type:'img'"
+                                                             href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9506120054601799056%22%7D&amp;n_type=1&amp;p_from=4"
+                                                             target="_blank"><img
+                                            src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2357831037,1622968332&amp;fm=173&amp;app=49&amp;f=JPEG?w=312&amp;h=208&amp;s=96246DA0C163BEFA5715801F0300C0C1"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-showlog="tid:136;cst:1;logInfo:related_news;"
+                                data-extralog="flow:2;rid:;pos:2;extra:;isBaiJiaHao:1;login:1;"
+                                data-rid="related_news_2">
+                                <div class="item-content clearfix">
+                                    <div class="news-info">
+                                        <div class="news-title"><h3><a class="upgrade"
+                                                                       data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                                       data-extralog="rid:;pos:2;extra:;isBaiJiaHao:1;login:1;type:'title'"
+                                                                       href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10322587870294860432%22%7D&amp;n_type=1&amp;p_from=4"
+                                                                       target="_blank">财经57号｜国际油价“又双叒叕”跌了，咋回事？</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="news-pic"><a class="upgrade"
+                                                             data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                             data-extralog="rid:;pos:3;extra:;isBaiJiaHao:1;login:1;type:'img'"
+                                                             href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10322587870294860432%22%7D&amp;n_type=1&amp;p_from=4"
+                                                             target="_blank"><img
+                                            src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2792055660,1670510954&amp;fm=173&amp;app=49&amp;f=JPEG?w=312&amp;h=208&amp;s=C900CD10064060FB46EC5D550300C0E2"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-showlog="tid:136;cst:1;logInfo:related_news;"
+                                data-extralog="flow:2;rid:;pos:3;extra:;isBaiJiaHao:1;login:1;"
+                                data-rid="related_news_3">
+                                <div class="item-content clearfix">
+                                    <div class="news-info">
+                                        <div class="news-title"><h3><a class="upgrade"
+                                                                       data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                                       data-extralog="rid:;pos:3;extra:;isBaiJiaHao:1;login:1;type:'title'"
+                                                                       href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9524178901817147711%22%7D&amp;n_type=1&amp;p_from=4"
+                                                                       target="_blank">直播等于带货？曲美用线上发布会打造了一家网红店</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="news-pic"><a class="upgrade"
+                                                             data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                             data-extralog="rid:;pos:4;extra:;isBaiJiaHao:1;login:1;type:'img'"
+                                                             href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9524178901817147711%22%7D&amp;n_type=1&amp;p_from=4"
+                                                             target="_blank"><img
+                                            src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4247709105,3900056378&amp;fm=173&amp;app=49&amp;f=JPEG?w=312&amp;h=208&amp;s=D480BD1B0876E48AD1A8E8E20300F0B0"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-showlog="tid:136;cst:1;logInfo:related_news;"
+                                data-extralog="flow:2;rid:;pos:4;extra:;isBaiJiaHao:1;login:1;"
+                                data-rid="related_news_4">
+                                <div class="item-content clearfix">
+                                    <div class="news-info">
+                                        <div class="news-title"><h3><a class="upgrade"
+                                                                       data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                                       data-extralog="rid:;pos:4;extra:;isBaiJiaHao:1;login:1;type:'title'"
+                                                                       href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10460483207058839203%22%7D&amp;n_type=1&amp;p_from=4"
+                                                                       target="_blank">两融余额三连升 30股融资余额增幅超20%</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="news-pic"><a class="upgrade"
+                                                             data-clklog="tid:148;cst:2;logInfo:related_news;"
+                                                             data-extralog="rid:;pos:5;extra:;isBaiJiaHao:1;login:1;type:'img'"
+                                                             href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10460483207058839203%22%7D&amp;n_type=1&amp;p_from=4"
+                                                             target="_blank"><img
+                                            src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=4106470936,393737244&amp;fm=173&amp;app=49&amp;f=JPEG?w=312&amp;h=208&amp;s=890A5C325B4B544B525DA0DA020080B1"></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="relateAd" ad-id="relate-js" class="wangmeng-ad" data-showlog="tid:369;cst:1;logInfo:adsjs;"
+                     data-clklog="tid:370;cst:2;logInfo:adsjs;"
+                     data-extralog="rid:;pos:5;extra:;baijiahao:1;login:1;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-container" class="bottom-container ">
+        <div class="copy-right">
+            <div class="baidu-info"><a class="sethome" href="//www.baidu.com/cache/sethelp/index.html"
+                                       target="_blank"><span>设为首页</span></a><span class="copyright-text"><span>&#169;&nbsp;Baidu&nbsp;</span><a
+                    href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com"
+                                                                                     target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span><img
+                    width=13 height=16
+                    src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/copy_rignt_24.png"/></span></div>
+            <div class="recordcode"><a
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001"
+                    target="_blank"><i></i>京公网安备11000002000001号</a></div>
+        </div>
+        <div class="back-to-top" data-showlog="tid:133;cst:1;logInfo:back_to_top;"
+             data-clklog="tid:138;cst:2;logInfo:back_to_top;" data-extralog="rid:;pos:;extra:;isBaiJiaHao:1;login:1;"
+             data-rid="back_to_top">
+            <div class="icon-text"><span>返回顶部</span></div>
+            <div class="icon-arrow"><span></span></div>
+        </div>
     </div>
 </div>
-
-<script crossorigin="anonymous" src="//www.dpfile.com/app/owl/static/owl_1.7.11.js"></script>
-<script>
-    Owl.start({
-        project: 'com.sankuai.movie.fe.mywww',
-        pageUrl: location.href.split('?')[0].replace(/\/\d+/g, '/:id'),
-        devMode: false
-    })
-</script>
-<script src="//s0.meituan.net/bs/?f=myfe/canary:mojo-0.1.2.js"></script>
-<script>
-    MAInit({
-        appkey: 'com.sankuai.movie.fe.mywww',
-        app_name: 'maoyan-pc-web',
-        app_version: '1.0.0',
-    })
-</script>
-<!--[if IE 8]>
-<script crossorigin="anonymous"
-        src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/es5-shim.bbad933f.js"></script>
-<![endif]-->
-<!--[if IE 8]>
-<script crossorigin="anonymous"
-        src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/es5-sham.d6ea26f4.js"></script>
-<![endif]-->
-<script crossorigin="anonymous"
-        src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/common.c4fcde76.js"></script>
-<script crossorigin="anonymous"
-        src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/board-index.e144d497.js"></script>
+<script type="text/javascript">window.onload = function () {
+    var contentContainer = document.getElementById('content-container');
+    var bottomContainer = document.getElementById('bottom-container');
+    var rightContainer = document.getElementById('right-container');
+    var minContentHeight = window.innerHeight - bottomContainer.offsetHeight;
+    if (contentContainer.offsetHeight < minContentHeight) {
+        contentContainer.style.height = minContentHeight + 'px';
+        bottomContainer.className += ' fixed';
+    }
+    if (rightContainer.children.length === 0) {
+        rightContainer.style.width = parseInt(rightContainer.offsetWidth + 1, 10) + 'px';
+    }
+};</script>
+<script type="text/javascript" src="https://mbdp02.bdstatic.com/static/superlanding/js/lib/jquery_0affbc1.js"></script>
+<script type="text/javascript"
+        src="https://mbdp02.bdstatic.com/static/superlanding/js/land_min_pack_8e22d87.js"></script>
+<script type="text/javascript"
+        src="https://mbdp02.bdstatic.com/static/superlanding/js/article/index_bd58962.js"></script>
 </body>
 </html>

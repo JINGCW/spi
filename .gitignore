@@ -125,3 +125,4 @@ dmypy.json
 
 #self
 .idea/
+spiderman/templates
