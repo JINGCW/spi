@@ -126,3 +126,8 @@ dmypy.json
 #self
 .idea/
 spiderman/templates
+helpers_test.py
+out/
+spiderman/spiders/helpers.py
+temp.py
+test.py
