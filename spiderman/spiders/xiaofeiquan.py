@@ -12,10 +12,11 @@ class XiaoFeiQuanSpider(scrapy.Spider):
     #     "http://www.sx.gov.cn/art/2020/4/11/art_1462938_42552885.html"
     # ]
 
-    start_urls = urls_according_keywords(total_pages=40)
+    start_urls = urls_according_keywords(total_pages=2)
 
     # print(len(start_urls))
     # for o in start_urls:
+    #     print("----------------")
     #     print(o)
 
     # start_urls = ["http://www.chinastock.com.cn/yhwz_about.do?methodCall=getDetailInfo&docId=7200334"]
